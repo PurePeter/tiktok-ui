@@ -13,7 +13,9 @@ import {
     faSignOut,
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
+import config from '~/config';
 import Button from '~/Components/Button';
 import images from '~/assets/images';
 import styles from './Header.module.scss';
@@ -108,7 +110,9 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt="Tik Tok" />
+                    <Link to={config.routes.home} className={cx('logo-link')}>
+                        <img src={images.logo} alt="TikTok" />
+                    </Link>
                 </div>
 
                 <Search />

@@ -70,7 +70,6 @@ export const SearchIcon = ({ width = '2rem', height = '2rem', className }) => (
         fill="currentColor"
         viewBox="0 0 48 48"
         xmlns="http://www.w3.org/2000/svg"
-        style={{ marginTop: 4, marginRight: 4 }}
     >
         <path
             fillRule="evenodd"

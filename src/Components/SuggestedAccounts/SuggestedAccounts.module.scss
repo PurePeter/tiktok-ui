@@ -11,6 +11,12 @@
 .account-item {
     display: flex;
     padding: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.account-item:hover {
+    background-color: #0000000d;
 }
 
 .avatar {
@@ -48,4 +54,5 @@
     font-size: 1.4rem;
     font-weight: 500;
     cursor: pointer;
+    text-align: center;
 }
